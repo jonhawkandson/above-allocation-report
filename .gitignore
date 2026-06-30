@@ -1,0 +1,7 @@
+data/
+*.py
+*.sh
+clients.json
+*.txt
+__pycache__/
+allocation_report.html
