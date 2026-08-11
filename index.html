@@ -145,11 +145,26 @@ table{border-collapse:collapse;width:100%;background:#fff;border:1px solid #ddd;
 <a href="#physical-design-id">ID Sthlm & Malmoe</a>
 <a href="#physical-design-design-tech">Design Tech</a>
 
-<span id="report-updated" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:10px;color:#aaa;white-space:nowrap;pointer-events:none">Float sync 2026-08-11 10:58 CEST</span></nav>
+<span id="report-updated" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:10px;color:#aaa;white-space:nowrap;pointer-events:none">Float sync 2026-08-11 11:07 CEST</span></nav>
 
 <div id="legendbar">
   <b>Available hours/week:</b>
 <div class="legend-item"><span class="swatch" style="background:#ffffff"></span>0h</div>
+<div class="legend-item"><span class="swatch" style="background:#ffeeee"></span>1–8h</div>
+<div class="legend-item"><span class="swatch" style="background:#ffd3d3"></span>9–20h</div>
+<div class="legend-item"><span class="swatch" style="background:#ffa7a7"></span>21–30h</div>
+<div class="legend-item"><span class="swatch" style="background:#ff7b7b"></span>31–40h</div>
+<div class="legend-item"><span class="swatch" style="background:#ff5050"></span>40h+</div>
+<div class="legend-sep"></div>
+  <b>Tentatively (high prob) booked hours/week:</b>
+<div class="legend-item"><span class="swatch" style="background:#d5e5f1"></span>1–8h</div>
+<div class="legend-item"><span class="swatch" style="background:#94c0dc"></span>9–20h</div>
+<div class="legend-item"><span class="swatch" style="background:#60a0cb"></span>21–30h</div>
+<div class="legend-item"><span class="swatch" style="background:#2980b9"></span>31–40h</div>
+<div class="legend-sep"></div>
+<div class="legend-item"><span class="swatch" style="background:#e0e0e0"></span>Time Off</div>
+<div class="legend-item"><span class="swatch" style="background:repeating-linear-gradient(45deg,#d0d0d0,#d0d0d0 2px,#ebebeb 2px,#ebebeb 8px)"></span>Not in contract</div>
+</div>
 <div class="legend-item"><span class="swatch" style="background:#ffeeee"></span>1–8h</div>
 <div class="legend-item"><span class="swatch" style="background:#ffd3d3"></span>9–20h</div>
 <div class="legend-item"><span class="swatch" style="background:#ffa7a7"></span>21–30h</div>
@@ -614,7 +629,7 @@ table{border-collapse:collapse;width:100%;background:#fff;border:1px solid #ddd;
 </div>
 
 <div id="scroll-container">
-<section id="above-summary" class="slide">
+<section id="above-summary" class="slide" style="height:auto;min-height:100vh">
 <h2>Allocation Summary</h2>
 <div class="table-wrap">
 <table class="alloc-table">
@@ -713,9 +728,9 @@ table{border-collapse:collapse;width:100%;background:#fff;border:1px solid #ddd;
 </div>
 </section>
 
-<section id="above-graph" class="slide">
+<section id="above-graph" class="slide" style="overflow:hidden">
 <h2>Availability Graph</h2>
-<div style="display:grid;grid-template-rows:36% 32% 32%;grid-template-columns:repeat(4,1fr);gap:6px;height:calc(100vh - 160px);padding:4px;box-sizing:border-box">
+<div style="display:grid;grid-template-rows:36% 32% 32%;grid-template-columns:repeat(4,1fr);gap:6px;height:calc(100vh - 200px);padding:4px;box-sizing:border-box">
   <div style="grid-column:1/-1;position:relative;overflow:hidden">
     <canvas id="avail-graph-canvas"></canvas>
   </div>
@@ -874,6 +889,7 @@ else{
 
 
 
+
 <section class="slide" id="digital-design-ui">
   <div class="slide-label"><span>Digital Design – UI</span></div>
   <div class="slide-content">
@@ -951,6 +967,7 @@ else{
 
 
 
+
 <section class="slide" id="strategy-change-pm">
   <div class="slide-label"><span>Strategy & Change – PM</span></div>
   <div class="slide-content">
@@ -1020,6 +1037,7 @@ else{
 
 
 
+
 <section class="slide" id="strategy-change-xm">
   <div class="slide-label"><span>Strategy & Change – XM</span></div>
   <div class="slide-content">
@@ -1074,6 +1092,7 @@ else{
 </table></div>
   </div>
 </section>
+
 
 
 
@@ -1134,6 +1153,7 @@ else{
 </table></div>
   </div>
 </section>
+
 
 
 
@@ -1202,6 +1222,7 @@ else{
 </table></div>
   </div>
 </section>
+
 
 
 
@@ -1282,6 +1303,7 @@ else{
 
 
 
+
 <section class="slide" id="physical-design-design-tech">
   <div class="slide-label"><span>Physical Design – Design Tech</span></div>
   <div class="slide-content">
@@ -1339,6 +1361,7 @@ else{
 </table></div>
   </div>
 </section>
+
 
 
 
